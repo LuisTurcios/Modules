@@ -1,10 +1,10 @@
 <br>
 <h1 class="display-4">Ingrese su familia</h1>
-<div style="width:80%; margin-left:10%">
+<div style="width:55%; margin-left:22%">
    <!-- <div style="width:40%; margin-left:27%">-->
 <hr class="hola">
 </div>
-<div class="shadow p-3 mb-5 bg-white rounded" style="width:1390px; margin-left: 6%">
+<div class="shadow p-3 mb-5 bg-white rounded" style="width:60%; margin-left: 20%">
 
 <div class="conteiner">
     <div class="row">
@@ -28,7 +28,7 @@
 <div class="conteiner" style="width: 49%">
     <div class="row">
         <div class="col md-4">
-            <h5><span class="badge badge-primary">Agregar padre</span></h5>
+            <h5><span class="badge badge-light">Agregar padre</span></h5>
             <div class="input-group mb-3">
                     <div class="input-group-prepend" >
                         <span class="input-group-text"><i class="fas fa-search"></i></span>
@@ -43,7 +43,7 @@
 <div class="conteiner" style="width: 49%">
     <div class="row">
         <div class="col md-4">
-            <h5><span class="badge badge-primary">Agregar madre</span></h5>
+            <h5><span class="badge badge-light">Agregar madre</span></h5>
             <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text"><i class="fas fa-search"></i></span>
@@ -58,7 +58,7 @@
 <div class="conteiner">
     <div class="row">
         <div class="col md-4">
-            <h5><span class="badge badge-primary">Agregar encargado(s)</span></h5>
+            <h5><span class="badge badge-light">Agregar encargado(s)</span></h5>
             <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text"><i class="fas fa-search"></i></span>
@@ -75,26 +75,29 @@
 <br>
 
 
-
-<br>
 <button type="button" class="btn btn-outline-primary">Enviar formulario</button>
 
 </div>
 
-<form>
-    
-    <div class="group">      
-      <input type="text" required>
-      <span class="highlight"></span>
-      <span class="bar"></span>
-      <label>Name</label>
-    </div>
-      
-    <div class="group">      
-      <input type="text" required>
-      <span class="highlight"></span>
-      <span class="bar"></span>
-      <label>Email</label>
-    </div>
-    
-  </form>
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button hidden="true" data-toggle="modal" data-target="#exampleModalCenter"></button>
+
