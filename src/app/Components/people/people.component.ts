@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EmailValidator } from '@angular/forms';
 
 @Component({
   selector: 'app-people',
@@ -6,10 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./people.component.css']
 })
 export class PeopleComponent implements OnInit {
-  email: [];
-  constructor() { }
+  public email = [];
+  public text: string;
+  constructor() { 
+    this.text = ""
+    
+
+  }
 
   ngOnInit() {
+  }
+
+  addEmail(){
+    this.email.push(this.text)
+    
+    console.log(this.email)
+    this.text = ""
   }
 
 }
