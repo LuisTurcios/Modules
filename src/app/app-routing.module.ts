@@ -8,12 +8,13 @@ import { UnitsComponent } from './Components/units/units.component';
 import { CareersComponent } from './Components/careers/careers.component';
 import { CoursesComponent } from './Components/courses/courses.component';
 import { NotFoundComponent } from './Components/not-found/not-found.component';
+import { LoginComponent } from './Components/login/login.component';
 
 
 const routes: Routes = [
-  {path: 'inicio', component: PeopleComponent},
+  {path: 'inicio', component: LoginComponent},
   {path: 'people', component: PeopleComponent},
-  {path: '', component: PeopleComponent},
+  {path: '', component: LoginComponent},
   {path: 'family', component: FamilyComponent},
   {path: 'units', component: UnitsComponent},
   {path: 'careers', component: CareersComponent},
