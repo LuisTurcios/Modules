@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-family',
@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./family.component.css']
 })
 export class FamilyComponent implements OnInit {
-
+  @ViewChild('openModal') openModal:ElementRef;
   constructor() { }
 
   ngOnInit() {
+    this.openModal.nativeElement.click();
   }
 
 }
