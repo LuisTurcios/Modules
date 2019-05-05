@@ -8,9 +8,12 @@ import { EmailValidator } from '@angular/forms';
 })
 export class PeopleComponent implements OnInit {
   public email = [];
+  public telephone = [];
   public text: string;
+  public phone: string;
   constructor() { 
-    this.text = ""
+    this.text = "";
+    this.phone = ""
     
 
   }
@@ -19,10 +22,20 @@ export class PeopleComponent implements OnInit {
   }
 
   addEmail(){
-    this.email.push(this.text)
+    
+    this.email.push(this.text.toUpperCase())
     
     console.log(this.email)
     this.text = ""
   }
+
+  addPhone(){
+    this.telephone.push(this.phone);
+
+    console.log(this.telephone);
+    this.phone = "";
+  }
+
+
 
 }
