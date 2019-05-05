@@ -3,7 +3,16 @@
   }
   
   h1{
-    margin-left: 35%
+    text-align: center
+
+  }
+  button,a{
+    position: absolute;
+    left: 25.5%
+  }
+  a{
+    position: absolute;
+    top: 41%
   }
   
   
