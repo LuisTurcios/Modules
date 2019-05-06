@@ -10,13 +10,13 @@
     <div class="row">
         <div class="col md-4">
             <form>
-                <input required='' type='text' [(ngModel)]="person.firstName" >
+                <input required='' type='text' [(ngModel)]="person.firstName" [ngModelOptions]="{standalone: true}" >
                 <label alt='Primer nombre' placeholder='Primer nombre'></label>
             </form>
         </div>
         <div class="col md-4">
             <form>
-                <input required='' type='text' [(ngModel)]="person.middleName">
+                <input required='' type='text' [(ngModel)]="person.middleName" [ngModelOptions]="{standalone: true}">
                 <label alt='Segundo nombre' placeholder='Segundo nombre'></label>
             </form>
         </div>
@@ -28,19 +28,19 @@
     <div class="row">
         <div class="col md-4">
             <form>
-                <input required='' type='text' [(ngModel)]="person.firstLastName">
+                <input required='' type='text' [(ngModel)]="person.firstLastName"[ngModelOptions]="{standalone: true}">
                 <label alt='Primer Apellido' placeholder='Primer Apellido'></label>
             </form>
         </div>
         <div class="col md-4">
             <form>
-                <input required='' type='text' [(ngModel)]="person.secondLastName">
+                <input required='' type='text' [(ngModel)]="person.secondLastName"[ngModelOptions]="{standalone: true}">
                 <label alt='Segundo apellido' placeholder='Segundo apellido'></label>
             </form>      
         </div>
         <div class="col md-4">
             <form>
-                <input required='' type='text' [(ngModel)]="person.marriedName">
+                <input required='' type='text' [(ngModel)]="person.marriedName"[ngModelOptions]="{standalone: true}">
                 <label alt='Apellido de casada' placeholder='Apellido de casada'></label>
             </form>           
         </div>
@@ -52,13 +52,13 @@
     <div class="row">
         <div class="col md-3">
             <form>
-                <input required="" type='date' [(ngModel)]="person.birthname">
+                <input required="" type='date' [(ngModel)]="person.birthname"[ngModelOptions]="{standalone: true}">
                 <label alt='Fecha de nacimiento' placeholder='Fecha de nacimiento'></label>
             </form>   
         </div>
         <div class="col md-3">
             <form>
-                <select required="" class="custom-select" [(ngModel)]="person.religion">
+                <select required="" class="custom-select" [(ngModel)]="person.religion"[ngModelOptions]="{standalone: true}">
                     <option value="" hidden>Example Placeholder</option>
                     <option selected>Elije tu religion...</option>
                     <option value="CATOLICO">Catolico</option>
@@ -79,14 +79,14 @@
     <div class="row">
         <div class="col md-2">
             <form>
-                <input [(ngModel)]="mail" name="email" required=""  type='text' id="input" style="width: 89%">
+                <input [(ngModel)]="mail" name="email" required=""  type='text' id="input" style="width: 89%"[ngModelOptions]="{standalone: true}">
                 <label alt='Correo electronico' placeholder='Correo electronico' style="width: 20%; position: absolute;"></label> 
                 <button type="button" class="btn btn-outline-info" style="margin-left:5%;margin-bottom: 1%" (click)="addEmail()">+</button>
             </form>  
         </div>
         <div class="col md-3">
             <form>
-                    <select required="" class="custom-select" [(ngModel)]="person.gender"> 
+                    <select required="" class="custom-select" [(ngModel)]="person.gender"[ngModelOptions]="{standalone: true}"> 
                         <option value="" hidden>Example Placeholder</option>
                         <option selected>Elije tu genero...</option>
                         <option value="HOMBRE">Hombre</option>
@@ -103,7 +103,7 @@
     <div class="row">
         <br>
         <div class="col md-2">
-            <select required="" class="custom-select" [(ngModel)]="person.department">
+            <select required="" class="custom-select" [(ngModel)]="person.department"[ngModelOptions]="{standalone: true}">
                 <option value="" hidden>Example Placeholder</option>
                 <option selected>Elije tu departamento...</option>
                 <option value="ALTA VERAPAZ">Alta Verapaz</option>
@@ -130,15 +130,15 @@
             <label alt='Departamento' placeholder='Departamento'></label> 
         </div>
         <div class="col md-2">
-            <input required='' type='text' [(ngModel)]="person.municipality">
+            <input required='' type='text' [(ngModel)]="person.municipality"[ngModelOptions]="{standalone: true}">
             <label alt='Municipio' placeholder='Municipio'></label>   
         </div>
         <div class="col md-2">
-            <input required='' type='text' [(ngModel)]="person.zone">
+            <input required='' type='text' [(ngModel)]="person.zone"[ngModelOptions]="{standalone: true}">
             <label alt='Zona' placeholder='Zona'></label>  
         </div>
         <div class="col md-2">
-            <input required='' type='text' [(ngModel)]="person.residential">
+            <input required='' type='text' [(ngModel)]="person.residential"[ngModelOptions]="{standalone: true}">
             <label alt='Colonia o residencial' placeholder='Colonia o residencial'></label>    
         </div>
     </div>
@@ -148,19 +148,19 @@
 <div class="conteiner">
     <div class="row">
         <div class="col md-3">
-            <input required='' type='text' [(ngModel)]="person.avenue">
+            <input required='' type='text' [(ngModel)]="person.avenue"[ngModelOptions]="{standalone: true}">
             <label alt='Avenida' placeholder='Avenida'></label> 
         </div>
         <div class="col md-3">
-            <input required='' type='text' [(ngModel)]="person.street">
+            <input required='' type='text' [(ngModel)]="person.street"[ngModelOptions]="{standalone: true}">
             <label alt='Calle' placeholder='Calle'></label>      
         </div>
         <div class="col md-3">
-            <input required='' type='text' [(ngModel)]="person.sector">
+            <input required='' type='text' [(ngModel)]="person.sector"[ngModelOptions]="{standalone: true}">
             <label alt='Manzana' placeholder='Manzana'></label>      
         </div>
         <div class="col md-3">
-            <input required='' type='text' [(ngModel)]="person.number">
+            <input required='' type='text' [(ngModel)]="person.number"[ngModelOptions]="{standalone: true}">
             <label alt='Número de casa' placeholder='Número de casa'></label>     
         </div>
     </div>
@@ -170,15 +170,15 @@
 <div class="conteiner">
     <div class="row">
         <div class="col md-4">
-            <input required='' type='text' maxlength="8"  [(ngModel)]="person.phones">
+            <input required='' type='text' maxlength="8"  [(ngModel)]="person.phones"[ngModelOptions]="{standalone: true}">
             <label alt='Telefono de residencia' placeholder='Telefono de residencia'></label>
         </div>
         <div class="col md-4">
-            <input required='' type='text' maxlength="8"  [(ngModel)]="person.cellphones">
+            <input required='' type='text' maxlength="8"  [(ngModel)]="person.cellphones"[ngModelOptions]="{standalone: true}">
             <label alt='Celular' placeholder='Celular'></label>     
         </div>
         <div class="col md-4">
-            <input [(ngModel)]="phone" name="other" maxlength="8"  required=""  type='text' id="input" style="width: 85%">
+            <input [(ngModel)]="phone" name="other" maxlength="8"  required=""  type='text' id="input" style="width: 85%"[ngModelOptions]="{standalone: true}">
             <label alt='Otro' placeholder='Otro' style="width: 20%; position: absolute;"></label> 
             <button type="button" class="btn btn-outline-info" style="margin-left:5%; margin-bottom: 1%" (click)="addPhone()">+</button>
         </div>
